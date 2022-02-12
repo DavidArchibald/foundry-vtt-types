@@ -30,13 +30,13 @@ declare abstract class AbstractFilter extends PIXI.Filter {
   /**
    * Always target the resolution of the render texture or renderer
    */
-  // @ts-expect-error this is a property on PIXI.Filter
   get resolution(): number;
   set resolution(value: number);
 
   /**
    * Always target the MSAA level of the render texture or renderer
    */
+  // @ts-expect-error this is a property on PIXI.Filter
   get multisample(): PIXI.MSAA_QUALITY;
   set multisample(value: PIXI.MSAA_QUALITY);
 }
